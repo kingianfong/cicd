@@ -8,6 +8,9 @@ jobs:
   test:
     runs-on: self-hosted
 
+    container:
+      image: kaggle/python:latest
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
